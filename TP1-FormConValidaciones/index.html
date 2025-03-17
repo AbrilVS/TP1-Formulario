@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Con Validaciones</title>
 </head>
-<body>
+<body> 
     <form>
-        <input type="text" name="" id="asd" onchange="asd(event)">
-       <!-- <input type="text" id="nombre" onfocus="vNombre(event)">
-        <input type="email" id="mail" onchange="c()">
-        <input type="password" id="contra">
-        <input type="password" id="contra" onchange="confirmar()">
-        <input type="email" id="mail">-->
-        <button onclick="f()">Enviar</button>
+        <input type="text" name="" id="asd">
+        <span id="validation-message"></span>
+        <input type="text" name="" id="mail">
+        <span id="validation-message2"></span>
+        <input type="text" name="" id="contra">
+        <span id="validation-message3"></span>
+        <input type="text" name="" id="conf">
+        <span id="validation-message4"></span>
+
+        <button type="button" onclick="validar(event)">Enviar</button>
     </form>
+     
     <script src="codigo.js" ></script>
 </body>
 </html>
