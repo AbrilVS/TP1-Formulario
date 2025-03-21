@@ -30,7 +30,6 @@ function(event) {
 
 document.getElementById('contra').addEventListener('input', 
 function asd (event) {
-    var estado=false;
     const input = event.target.value;
     const messageElement3 = document.getElementById('validation-message3');
     const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/;
@@ -43,8 +42,11 @@ function asd (event) {
     messageElement3.textContent = 'La contraseña debe tener al menos 8 caracteres, al menos un número y una letra.';
     messageElement3.style.color = 'red';
     }
-    estado=true;
-    return estado;
+   if(document.getElementById('conf').value.length>0 && document.getElementById('conf').value != input){
+    const messageElement4 = document.getElementById('validation-message4');
+    messageElement4.textContent = 'La contraseña no coincide.';
+    messageElement4.style.color = 'red';
+   }
 });
 
 document.getElementById('conf').addEventListener('input', 
@@ -52,20 +54,15 @@ function(event) {
     const input = event.target.value;
     const messageElement4 = document.getElementById('validation-message4');
     var contra=document.getElementById('contra').value;
-    estado=asd(event);
-    if(estado){
         if (input==contra &&bool3) {
     messageElement4.textContent = 'Válido';
     messageElement4.style.color = 'green';
     bool4 =true;
-    } else {
-    messageElement4.textContent = 'La contraseña no coincide.';
+    }else{
+         messageElement4.textContent = 'La contraseña no coincide.';
     messageElement4.style.color = 'red';
     }
-    }
-    
 
-    
 });
 
 function validar(event){
