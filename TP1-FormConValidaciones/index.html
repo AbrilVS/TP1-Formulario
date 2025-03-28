@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
+<body id="m"> 
     <form id="d">
         <h1>Registro</h1>
         <p>Nombre Completo</p>
@@ -19,11 +19,16 @@
         <input type="text" name="" id="mail">
         <span id="validation-message2"></span>
         <p>Contraseña</p>
-        <input type="text" name="" id="contra">
+        <div class="cont-contra">
+            <input type="text" name="" id="contra">
+            <img src="eye-solid-v.svg" id="Im" onclick="Ocultar()" class="btn-ocultar"></img>
+        </div> 
         <span id="validation-message3"></span>
-        <button type="button" onclick="Ocultar()">Ocultar</button>
         <p>Confirmar contraseña</p>
-        <input type="text" name="" id="conf">
+        <div class="cont-contra">
+             <input type="text" name="" id="conf">
+             <img src="eye-solid-v.svg" id="Imi" onclick="Ocultar2()" class="btn-ocultar"></img>
+        </div>
         <span id="validation-message4"></span>
         
         <button type="button" onclick="validar(event)">Enviar</button>

@@ -1,7 +1,7 @@
 
 body {
     font-family:Poppins;
-    background: linear-gradient(135deg, #a1eef3, #546acc);
+    background: linear-gradient(135deg, #a1eef3, #546acc); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,10 +9,16 @@ body {
     margin: 0;
     flex-direction: column;
 }
-.dark-mode {
-    background-color: black;
+.dark-mode-body {
+    background: linear-gradient(135deg, #1f5d61, #1b2969); 
     color: white;
   }
+  .dark-mode-form {
+    background: black;
+    color: white;
+    border-color: white;
+  }
+
 h1{
     align-self: center;
     color:#5a3e91;
@@ -68,6 +74,7 @@ span {
     min-height: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
+    padding-top: 3%;
 }
 
 span:empty {
@@ -76,5 +83,16 @@ span:empty {
 
 span:not(:empty) {
     opacity: 1;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    margin-left: 50%;
+}
+
+.cont-contra{
+    display: flex;
+    width: 8%;
 }
 

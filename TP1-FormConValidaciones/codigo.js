@@ -76,14 +76,34 @@ function validar(event){
 }
 function Ocultar() {
     var x = document.getElementById("contra");
+    
     if (x.type === "password") {
       x.type = "text";
+      document.getElementById("Im").src = "eye-solid-v.svg";
     } else {
       x.type = "password";
+      document.getElementById("Im").src = "eye-slash-solid-v.svg";
     }
   }
+
+
+function Ocultar2(){
+    var y =document.getElementById("conf");
+   
+        if (y.type === "password") {
+        y.type = "text";
+        document.getElementById("Imi").src = "eye-solid-v.svg";  
+      } else {
+        y.type = "password";
+        document.getElementById("Imi").src = "eye-slash-solid-v.svg";
+      }
+    
+    
+  }
+
   function DarkMode() {
     var element = document.querySelector("#d");
-    
-    element.classList.toggle("dark-mode");
+    var element2 = document.querySelector("#m");
+    element.classList.toggle("dark-mode-form");
+    element2.classList.toggle("dark-mode-body");
  }
