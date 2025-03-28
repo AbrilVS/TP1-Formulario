@@ -7,8 +7,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column;
 }
-
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
 h1{
     align-self: center;
     color:#5a3e91;

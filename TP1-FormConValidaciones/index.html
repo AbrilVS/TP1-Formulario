@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body> 
-    <form>
+    <form id="d">
         <h1>Registro</h1>
         <p>Nombre Completo</p>
         <input type="text" name="" id="asd">
@@ -21,13 +21,16 @@
         <p>Contraseña</p>
         <input type="text" name="" id="contra">
         <span id="validation-message3"></span>
+        <button type="button" onclick="Ocultar()">Ocultar</button>
         <p>Confirmar contraseña</p>
         <input type="text" name="" id="conf">
         <span id="validation-message4"></span>
-
+        
         <button type="button" onclick="validar(event)">Enviar</button>
+        
     </form>
-     
+    <button onclick="DarkMode()">Dark mode</button>
+   
     <script src="codigo.js" ></script>
 </body>
 </html>

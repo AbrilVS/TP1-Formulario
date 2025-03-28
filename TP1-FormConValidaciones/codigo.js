@@ -74,3 +74,16 @@ function validar(event){
         event.preventDefault();
     }
 }
+function Ocultar() {
+    var x = document.getElementById("contra");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  function DarkMode() {
+    var element = document.querySelector("#d");
+    
+    element.classList.toggle("dark-mode");
+ }
